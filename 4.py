@@ -30,19 +30,19 @@ class MyInt:
 
     def __gt__(self, other):
         if self.__check(other):
-            return self.x > other
+            return self.x > int(other)
 
     def __lt__(self, other):
         if self.__check(other):
-            return self.x < other
+            return self.x < int(other)
 
     def __ge__(self, other):
         if self.__check(other):
-            return self.x >= other
+            return self.x >= int(other)
 
     def __le__(self, other):
         if self.__check(other):
-            return self.x <= other
+            return self.x <= int(other)
 
 a = MyInt(5)
 print(a)
